@@ -1,5 +1,5 @@
 from flask import Flask, render_template, send_from_directory
-import gunicon
+import gunicorn
 app = Flask(__name__)
 
 # Profile data for the portfolio
@@ -27,15 +27,19 @@ profile_data = {
         },
         {
             "title": "Chatbot for Healthcare",
-            "description": "An AI chatbot to answer health-related queries using predefined Queries .",
+            "description": "An AI chatbot to answer health-related queries using predefined Queries.",
             "github": "https://github.com/code-with-aditya29/HealthInkAdvisor"
         },
         {
-            "title": "simple weather app",
-            "description": "An weather forcasting app by using API.",
+            "title": "Simple Weather App",
+            "description": "A weather forecasting app using API.",
             "github": "https://github.com/code-with-aditya29/weather_app"
+        },
+        {
+            "title": "Jarvis",
+            "description": "A fully developed personal voice assistant using Python and APIs from OpenAI & Weather.",
+            "github": "https://github.com/code-with-aditya29/aditya_jarvis"
         }
-
     ]
 }
 
